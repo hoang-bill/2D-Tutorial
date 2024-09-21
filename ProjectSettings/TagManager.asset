@@ -3,18 +3,22 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Boost
+  - Health
+  - Enemy
+  - Laser
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Laser
   - Water
   - UI
-  - 
-  - 
-  - 
-  - 
+  - Boost
+  - Health
+  - Enemy
+  - Player
   - 
   - 
   - 

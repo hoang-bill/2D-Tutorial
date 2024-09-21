@@ -22,9 +22,14 @@ public class Enemy : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.gameObject.tag == "Player")
+        if (collision.gameObject.CompareTag("Player"))
         {
-            GameManager.instance.InitiateGameOver();
+            GameManager.instance.ManageLives(-1);
+            if (GameManager.instance.lives <= 0)
+            {
+                GameManager.instance.InitiateGameOver();
+                Destroy(collision.gameObject); // hide the player ship when game is over
+            }
         }
         else
         {
@@ -34,6 +39,6 @@ public class Enemy : MonoBehaviour
         // GameManager.instance.IncreaseScore(10);
         Debug.Log("Collision!");
         Destroy(gameObject);
-        Destroy(collision.gameObject);
+        
     }
 }

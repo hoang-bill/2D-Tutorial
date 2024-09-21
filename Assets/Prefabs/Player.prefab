@@ -12,9 +12,9 @@ GameObject:
   - component: {fileID: 2933988036737313502}
   - component: {fileID: 437610497230964629}
   - component: {fileID: 2054751092494095241}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -99,6 +99,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   laser: {fileID: 308914195268343928, guid: 30a0afebb66cba147901e3400eab74ae, type: 3}
+  boostDuration: 5
+  boostSpeed: 10
+  normalSpeed: 3
+  horizontalInput: 0
 --- !u!58 &2054751092494095241
 CircleCollider2D:
   m_ObjectHideFlags: 0
